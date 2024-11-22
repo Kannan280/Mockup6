@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: Roboto-Light;
+    src: url("../fonts/Roboto-Light.ttf");
+  }
+
+.mainhead{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 7px 7px;
+    h1 {
+        margin: 50px 0;
+        font-family: Roboto-Light;
+        font-size: 55px;
+        font-weight: 300;
+    }
+}
+
+.sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    .imageleft{
+        flex-basis: 48%;
+        text-align: center;
+    }
+    .firstcontentright{
+        flex-basis: 48%;
+        text-align: left;
+        font-family: Roboto-Light;
+        font-size: 19px;
+        > h2{
+            margin-bottom: 20px
+        }
+        >p {
+            margin-bottom: 30px;
+        }
+        .btn{
+            padding: 15px 25px;
+            color: white;
+            background-color: red;
+        }
+    }
+}
+
+.sec2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.secondcontentleft{
+    flex-basis: 48%;
+    text-align: left;
+    font-family: Roboto-Light;
+    font-size: 19px;
+    > h2{
+        margin-bottom: 20px
+    }
+    >p {
+        margin-bottom: 30px;
+    }
+    .btn{
+        padding: 15px 25px;
+        color: white;
+        background-color: red;
+    }
+}
+.imageright{
+    img{
+        flex-basis: 48%;
+        text-align: center;
+    }
+    }
+
+
+    @media all and (min-width: 576px) {
+        .secondcontentleft{
+          flex-basis: 30%;
+      }
+       .firstcontentright {
+          flex-basis: 30%;
+       }
+      }
+      
+      @media all and (min-width: 1200px) {
+        .secondcontentleft{
+          flex-basis: 48%;
+        }
+        .firstcontentright {
+          flex-basis: 48%;
+         }
+      }
+      
+      @media all and (max-width: 576px) {
+        .secondcontentleft{
+          flex-basis: 100%;
+          margin-bottom: 5px ;
+          .head{
+            font-size: 15px;
+          }
+        }
+        .firstcontentright {
+            flex-basis: 100%;
+           }
+      }
