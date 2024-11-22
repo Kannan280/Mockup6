@@ -12,17 +12,17 @@ body{
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url("../fonts/Roboto-Regular.ttf");
+    src: url("../Mockup6/fonts/Roboto-Regular.ttf");
   }
   
   @font-face {
     font-family: Roboto-Medium;
-    src: url("../fonts/Roboto-Medium.ttf");
+    src: url("../Mockup6/fonts/Roboto-Medium.ttf");
   }
   
   @font-face {
     font-family: Roboto-Light;
-    src: url("../fonts/Roboto-Light.ttf");
+    src: url("../Mockup6/fonts/Roboto-Light.ttf");
   }
 
 .mainhead{
